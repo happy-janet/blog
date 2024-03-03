@@ -1,0 +1,190 @@
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: #C6DCBA;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: rgb(49, 48, 48);
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+ 
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
+
+  .carousel-item img {
+    height: 7%; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image fills the container */
+  }
+  .carousel-inner{
+    transition-duration: 0.2s;
+  }
+
+  .form-group{
+    margin-bottom: 20px;
+  }
+  
+  .form-group label{
+    font-size: 18px;
+    font-family: Georgia;
+  }
+
+  .mony{
+    font-size: 30px;
+  }
+
+  
+
+/* Footer styles */
+.footer {
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: #C6DCBA;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #C6DCBA;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #C6DCBA;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #C6DCBA;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+.footer .list-inline-item {
+    margin-right: 10px;
+}
+
+.footer .text-center {
+    color: #C6DCBA;
+}
+
+.footer .bg-dark {
+    background-color: #333;
+}
+
+.footer .bg-dark h5 {
+    color: #fff;
+}
+  
+
+.col{
+    padding-left: 60px;
+    padding-right: 60px;
+    /* flex-direction: inherit; */
+}
+.jante{
+    text-align: center;
+    padding-left: 50px;
+}
+body{
+    background-color: #607274;
+    overflow: auto;
+}
+.card {
+    background-color: #C6DCBA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .card img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+
+  .card-text {
+    flex: 1;
+    font-family: 'Times New Roman';
+  } 
+
+  .card-title{
+    font-family: Georgia;
+  }
+  .gallery {
+    width: 600px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    position: relative;
+  }
+  
+  .photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .flipped {
+    transform: rotateY(180deg);
+  }
+  h3{
+    text-align: center;
+    font-style: italic;
+
+  }
+  
+
